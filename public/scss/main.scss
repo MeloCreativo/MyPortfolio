@@ -1,6 +1,15 @@
+@import "variables";
+@import "mixins";
+
+/* html set font equivalence for rems and ems */
+html { font-size: 62.5%; }
+
 body {
-    background-color: rgb(0, 255, 85);
-    font-size: 12px;
-    line-height: 140%;
-    margin: 21px;
+    @include main-gradient;
+    height: 100vh;
 }
+.container {
+    font-size: 1.4rem;
+    @include margin-40px;
+    background: $ultra-blue;
+} 

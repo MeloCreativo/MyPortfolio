@@ -1,8 +1,25 @@
+/* Main Colors */
+/* Spacings */
+/* Main Colors */
+/* Spacings */
+/* html set font equivalence for rems and ems */
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: #00ff55;
-  font-size: 12px;
-  line-height: 140%;
-  margin: 21px;
+  background: #570573;
+  background: -moz-linear-gradient(-180deg, #570573 0%, #971068 50%, #dc010c 100%);
+  background: -webkit-linear-gradient(-180deg, #570573 0%, #971068 50%, #dc010c 100%);
+  background: linear-gradient(-180deg, #570573 0%, #971068 50%, #dc010c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#570573",endColorstr="#dc010c",GradientType=1);
+  height: 100vh;
+}
+
+.container {
+  font-size: 1.4rem;
+  margin: 40px;
+  background: #200749;
 }
 
 /*# sourceMappingURL=main.css.map */

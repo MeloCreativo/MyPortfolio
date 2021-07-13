@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin margin-40px {
+    margin: $p-40;
+}
+
+@mixin main-gradient {
+    background: rgb(87,5,115);
+    background: -moz-linear-gradient(-180deg, rgba(87,5,115,1) 0%, rgba(151,16,104,1) 50%, rgba(220,1,12,1) 100%);
+    background: -webkit-linear-gradient(-180deg, rgba(87,5,115,1) 0%, rgba(151,16,104,1) 50%, rgba(220,1,12,1) 100%);
+    background: linear-gradient(-180deg, rgba(87,5,115,1) 0%, rgba(151,16,104,1) 50%, rgba(220,1,12,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#570573",endColorstr="#dc010c",GradientType=1);
+}
