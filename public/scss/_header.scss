@@ -1,0 +1,24 @@
+/* Main nav styles */
+#main-nav {
+    @include d-flex--sp-bt;
+    padding: 20px 40px;
+
+    #main-logo {
+        min-width: 50px;
+        height: 50px;
+        background-image: url("/assets/images/logo-melo-creativo.svg");
+        @include bg-props--contain;
+    }
+
+    div {
+        @include d-flex;
+        align-items: center;
+
+        ol {
+            @include d-flex;
+            padding: 0px;
+            margin: 0px 20px 0px 0px;
+            gap: 20px;
+        }
+    }
+}

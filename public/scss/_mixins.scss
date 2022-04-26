@@ -1,5 +1,15 @@
 @import "variables";
 
+@mixin d-flex {
+    display: flex;
+}
+
+@mixin d-flex--sp-bt {
+    @include d-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin margin-40px {
     margin: $p-40;
 }
@@ -10,4 +20,10 @@
     background: -webkit-linear-gradient(-180deg, rgba(87,5,115,1) 0%, rgba(151,16,104,1) 50%, rgba(220,1,12,1) 100%);
     background: linear-gradient(-180deg, rgba(87,5,115,1) 0%, rgba(151,16,104,1) 50%, rgba(220,1,12,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#570573",endColorstr="#dc010c",GradientType=1);
+}
+
+@mixin bg-props--contain {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }

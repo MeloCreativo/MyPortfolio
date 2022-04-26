@@ -2,24 +2,45 @@
 /* Spacings */
 /* Main Colors */
 /* Spacings */
+/* Main nav styles */
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+#main-nav #main-logo {
+  min-width: 50px;
+  height: 50px;
+  background-image: url("/assets/images/logo-melo-creativo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+#main-nav div {
+  display: flex;
+  align-items: center;
+}
+#main-nav div ol {
+  display: flex;
+  padding: 0px;
+  margin: 0px 20px 0px 0px;
+  gap: 20px;
+}
+
 /* html set font equivalence for rems and ems */
 html {
   font-size: 62.5%;
 }
 
 body {
-  background: #570573;
-  background: -moz-linear-gradient(-180deg, #570573 0%, #971068 50%, #dc010c 100%);
-  background: -webkit-linear-gradient(-180deg, #570573 0%, #971068 50%, #dc010c 100%);
-  background: linear-gradient(-180deg, #570573 0%, #971068 50%, #dc010c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#570573",endColorstr="#dc010c",GradientType=1);
   height: 100vh;
+  background-color: #ffffff;
 }
 
 .container {
   font-size: 1.4rem;
   margin: 40px;
-  background: #200749;
 }
 
 /*# sourceMappingURL=main.css.map */
