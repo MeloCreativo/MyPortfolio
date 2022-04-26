@@ -8,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  width: -webkit-fill-available;
 }
 #main-nav #main-logo {
   min-width: 50px;
@@ -28,6 +32,16 @@
   gap: 20px;
 }
 
+.hero {
+  font-size: 1.4rem;
+  margin: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5em;
+}
+
 /* html set font equivalence for rems and ems */
 html {
   font-size: 62.5%;
@@ -37,10 +51,10 @@ body {
   height: 100vh;
   background-color: #ffffff;
 }
-
-.container {
-  font-size: 1.4rem;
-  margin: 40px;
+body .social-bar {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

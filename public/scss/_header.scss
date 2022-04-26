@@ -2,6 +2,10 @@
 #main-nav {
     @include d-flex--sp-bt;
     padding: 20px 40px;
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    width: -webkit-fill-available;
 
     #main-logo {
         min-width: 50px;
@@ -22,3 +26,13 @@
         }
     }
 }
+
+.hero {
+    font-size: 1.4rem;
+    @include margin-40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5em;
+} 
