@@ -9,9 +9,60 @@ body {
     height: 100vh;
     background-color: $white;
 
+    p {
+        font-family: $secondary-font;
+    }
+
     .social-bar {
         position: fixed;
-        bottom: 0;
-        left: 10px;
+        bottom: 0px;
+
+        &.left {
+            left: 40px;
+        }
+
+        &.right {
+            right: 40px;
+
+            a {
+                @include d-flex;
+                align-items: center;
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: vertical-rl;
+
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 1px;
+                    height: 100px;
+                    background: red;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        ul {
+            @include d-flex--cl;
+            align-items: center;
+            list-style: none;
+            padding-left: 0px;
+            margin-bottom: 0px;
+            
+            li {
+                margin-bottom: 18px;
+
+                i {
+                    font-size: 24px;
+                }
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 100px;
+                background: red;
+            }
+        }
     }
 }

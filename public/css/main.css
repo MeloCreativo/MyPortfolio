@@ -1,6 +1,8 @@
 /* Main Colors */
+/* Fonts */
 /* Spacings */
 /* Main Colors */
+/* Fonts */
 /* Spacings */
 /* Main nav styles */
 #main-nav {
@@ -51,10 +53,53 @@ body {
   height: 100vh;
   background-color: #ffffff;
 }
+body p {
+  font-family: Inter, sans-serif;
+}
 body .social-bar {
   position: fixed;
-  bottom: 0;
-  left: 10px;
+  bottom: 0px;
+}
+body .social-bar.left {
+  left: 40px;
+}
+body .social-bar.right {
+  right: 40px;
+}
+body .social-bar.right a {
+  display: flex;
+  align-items: center;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+body .social-bar.right a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100px;
+  background: red;
+  margin-top: 20px;
+}
+body .social-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+body .social-bar ul li {
+  margin-bottom: 18px;
+}
+body .social-bar ul li i {
+  font-size: 24px;
+}
+body .social-bar ul::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100px;
+  background: red;
 }
 
 /*# sourceMappingURL=main.css.map */
