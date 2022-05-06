@@ -9,6 +9,10 @@ body {
     height: 100vh;
     background-color: $white;
 
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $secondary-font;
+    }
+
     p {
         font-family: $secondary-font;
     }
@@ -29,6 +33,9 @@ body {
                 align-items: center;
                 -webkit-writing-mode: vertical-rl;
                 writing-mode: vertical-rl;
+                font-family: $primary-font;
+                font-size: 12px;
+                letter-spacing: 0.5px;
 
                 &::after {
                     content: "";

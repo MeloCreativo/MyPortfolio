@@ -20,10 +20,39 @@
 
         ol {
             @include d-flex;
+            list-style: none;
             padding: 0px;
             margin: 0px 20px 0px 0px;
             gap: 20px;
+
+            li {
+                counter-increment: item 1;
+
+                a {
+                    font-family: $primary-font;
+                    font-size: clamp(14px, 8vh, 14px);
+                    letter-spacing: 0.5px;
+    
+                    &::before {
+                        content: "0" counter(item) ".";
+                        margin-right: 5px;
+                        color: green;
+                        font-size: 14px;
+                        text-align: right;
+                    }
+                }
+            }
+            
         }
+    }
+
+    .cv-btn {
+        font-size: 14px;
+        font-family: $primary-font;
+        padding: 10px 15px;
+        border: 1px solid;
+        border-radius: 8px;
+        margin-right: 8px;
     }
 }
 
@@ -35,4 +64,16 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 5em;
+
+    h1 {
+        font-size: clamp(40px, 8vw, 80px);
+        font-weight: 900;
+        margin: 0px;
+        letter-spacing: -3px; 
+    }
+
+    span {
+        font-family: $primary-font;
+        font-size: clamp(14px, 5vw, 16px);
+    }
 } 

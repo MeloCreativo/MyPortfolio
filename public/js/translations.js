@@ -1,11 +1,13 @@
 var arrLang = {
     'es': {
-        'casa': 'Yo vivo en una casa muy, muy linda',
-        'perrito': 'Tengo un perro muy chiquito'
+        'hola': 'Hola! yo soy',
+        'mi_nombre': 'Francisco Melo',
+        'quien_soy': 'Diseñador UX/UI y desarrollador web'
     },
     'en': {
-        'casa': 'I live In a very fancy and beautifull house.',
-        'perrito': 'I have a really small doggy.'
+        'hola': 'Hi! my name is',
+        'mi_nombre': 'Francisco Melo',
+        'quien_soy': 'UX/UI designer and Web Developer'
     }
 };
 
